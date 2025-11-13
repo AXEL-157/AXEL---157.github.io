@@ -1,81 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
 body {
   background-image: url(./image/3181600.jpg);
   font-family: "Audiowide", sans-serif;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
+
 .moi {
   color: aliceblue;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
   text-align: center;
 }
+
 .corps {
-  justify-content: space-around;
   display: flex;
-}
-.About_me {
-  color: aliceblue;
-  margin-left: 5%;
-  margin-top: 40px;
-  background-color: rgba(3, 1, 112, 0.37);
-  width: 440px;
-  height: 430px;
-  border-radius: 40px;
-}
-.About_me:hover {
-  transform: scale(1.2);
-}
-.About_me h2 {
-  color: white;
-  text-align: center;
-  font-size: 20px;
-}
-.About_me h4 {
-  color: white;
-  text-align: center;
-  font-size: 80%;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 auto 40px auto;
+  max-width: 1920px;
 }
 
-.profil {
+.About_me,
+.profil,
+.Contact,
+.Projets {
+  flex: 1 1 200px;
+  margin: 0 10px;
+  min-width: 220px;
   color: aliceblue;
-  margin-left: 5%;
-  margin-top: 40px;
   background-color: rgba(3, 1, 112, 0.37);
+  border-radius: 40px;
+  transition: transform 0.3s ease;
   width: 440px;
   height: 430px;
-  border-radius: 40px;
-}
-.profil h2 {
-  color: white;
   text-align: center;
-  font-size: 20px;
 }
+
+.About_me:hover,
+.profil:hover,
+.Contact:hover,
+.Projets:hover {
+  transform: scale(1.05);
+}
+
+.About_me h2,
+.profil h2,
+.Contact h2,
+.Projets h2 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.About_me h4,
 .profil h4 {
   color: white;
   text-align: center;
   font-size: 80%;
 }
-.profil:hover {
-  transform: scale(1.2);
-}
-.Contact {
-  color: aliceblue;
-  margin-left: 5%;
-  margin-top: 40px;
-  background-color: rgba(3, 1, 112, 0.37);
-  width: 440px;
-  height: 440px;
-  border-radius: 40px;
-  text-align: center;
-}
-.Contact:hover {
-  transform: scale(1.2);
-}
-.Contact h2 {
-  color: white;
-  text-align: center;
-  font-size: 20px;
-}
+
 .test2 input,
 .test2 textarea {
   color: #ffffff;
@@ -87,10 +76,11 @@ body {
   text-align: center;
   font-family: "Audiowide", sans-serif;
 }
+
 .test2 button {
   color: #ffffff;
   background: none;
-   border: solid rgba(0, 0, 255, 0.281);
+  border: solid rgba(0, 0, 255, 0.281);
   border-radius: 10px;
   box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
   width: 120px;
@@ -112,36 +102,28 @@ body {
   text-align: center;
   font-size: 80%;
 }
+
 .Projets {
-  color: aliceblue;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 40px;
-  background-color: rgba(3, 1, 112, 0.37);
-  width: 410px;
+  width: 440px;
   height: 430px;
-  border-radius: 40px;
-  font-size: 20px;
 }
-.Projets:hover {
-  transform: scale(1.2);
-}
+
 .Projets a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
   list-style: none;
-  text-align: center;
   font-size: 80%;
+  transition: 0.3s ease;
+}
+
+.Projets a:hover {
+  color: #00c3ff;
+  text-shadow: 0px 0px 6px #00c3ff;
 }
 
 .Projets li {
   list-style-type: none;
-  margin-left: 42%;
-}
-.Projets h2 {
-  color: white;
-  text-align: center;
-  font-size: 80%;
+ margin-left: 3%;
 }
 
 .Compétences h2 {
@@ -151,19 +133,23 @@ body {
   text-align: center;
   font-size: 80%;
 }
+
 .python {
   width: 50px;
   height: 50px;
-  margin-left: 25%;
+margin-left: -3%;
 }
+
 .html {
   width: 50px;
   height: 50px;
 }
+
 .css {
   width: 40px;
   height: 50px;
 }
+
 .lien h2 {
   color: white;
   text-decoration: none;
@@ -171,15 +157,112 @@ body {
   text-align: center;
   font-size: 80%;
 }
+
 .git {
   width: 50px;
   height: 50px;
 }
+
 .link {
   width: 50px;
   height: 50px;
 }
+
 .logo {
   display: flex;
-  margin-left: 109px;
+  margin-left: 136px;
+}
+
+.Contact a {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  font-size: 80%;
+  margin: 5px 0;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.Contact a:hover {
+  color: #00c3ff;
+  text-shadow: 0px 0px 6px #00c3ff;
+  transform: translateY(-2px);
+}
+
+.Contact p {
+  margin: 10px 0;
+}
+
+@media (max-width: 1024px) {
+  .corps {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .About_me,
+  .profil,
+  .Contact,
+  .Projets {
+    width: 80%;
+    height: auto;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .corps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .About_me,
+  .profil,
+  .Contact,
+  .Projets {
+    width: 90%;
+    margin: 20px 0;
+    height: auto;
+  }
+
+  .Projets li {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .test2 input,
+  .test2 textarea {
+    width: 90%;
+  }
+
+  .test2 button {
+    width: 60%;
+  }
+
+  .moi {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .moi {
+    font-size: 18px;
+  }
+
+  .About_me,
+  .profil,
+  .Contact,
+  .Projets {
+    width: 95%;
+    border-radius: 20px;
+  }
+
+  .test2 input,
+  .test2 textarea {
+    font-size: 14px;
+  }
+
+  .test2 button {
+    height: 30px;
+    font-size: 14px;
+  }
 }
