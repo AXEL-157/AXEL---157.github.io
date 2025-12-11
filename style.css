@@ -1,11 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 
-body {
-  background-image: url(./image/3181600.jpg);
-  font-family: "Audiowide", sans-serif;
-  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-image: url(./image/125618-733814655_small.gif);
+  background-repeat: no-repeat;
+  background-size: cover;         
+  background-position: center;   
+  background-attachment: fixed;  
+  
+  font-family: "Audiowide", sans-serif;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
   overflow-x: hidden;
 }
 
@@ -33,7 +42,7 @@ body {
   margin: 0 10px;
   min-width: 220px;
   color: aliceblue;
-  background-color: rgba(3, 1, 112, 0.37);
+  background-color: rgba(34, 34, 34, 0.37);
   border-radius: 40px;
   transition: transform 0.3s ease;
   width: 440px;
@@ -45,7 +54,7 @@ body {
 .profil:hover,
 .Contact:hover,
 .Projets:hover {
-  transform: scale(1.05);
+  transform: scale(1.10);
 }
 
 .About_me h2,
@@ -111,7 +120,6 @@ body {
 .Projets a {
   color: white;
   text-decoration: none;
-  list-style: none;
   font-size: 80%;
   transition: 0.3s ease;
 }
@@ -123,21 +131,13 @@ body {
 
 .Projets li {
   list-style-type: none;
- margin-left: 3%;
-}
-
-.Compétences h2 {
-  color: white;
-  text-decoration: none;
-  list-style: none;
-  text-align: center;
-  font-size: 80%;
+  margin-left: 3%;
 }
 
 .python {
   width: 50px;
   height: 50px;
-margin-left: -3%;
+  margin-left: -3%;
 }
 
 .html {
@@ -150,10 +150,13 @@ margin-left: -3%;
   height: 50px;
 }
 
+.react {
+  width: 50px;
+  height: 50px;
+}
+
 .lien h2 {
   color: white;
-  text-decoration: none;
-  list-style: none;
   text-align: center;
   font-size: 80%;
 }
@@ -176,7 +179,6 @@ margin-left: -3%;
 .Contact a {
   color: white;
   text-decoration: none;
-  list-style: none;
   font-size: 80%;
   margin: 5px 0;
   display: inline-block;
@@ -193,6 +195,7 @@ margin-left: -3%;
   margin: 10px 0;
 }
 
+
 @media (max-width: 1024px) {
   .corps {
     justify-content: center;
@@ -205,7 +208,6 @@ margin-left: -3%;
   .Projets {
     width: 80%;
     height: auto;
-    margin-left: 0;
   }
 }
 
@@ -221,7 +223,6 @@ margin-left: -3%;
   .Projets {
     width: 90%;
     margin: 20px 0;
-    height: auto;
   }
 
   .Projets li {
