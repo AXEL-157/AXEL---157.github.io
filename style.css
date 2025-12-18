@@ -4,23 +4,21 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: "Audiowide", sans-serif;
 }
 
 body {
-  background-image: url(./image//3181600.jpg);
+  background-image: url(./image/3181600.jpg);
   background-repeat: no-repeat;
   background-size: cover;         
   background-position: center;   
   background-attachment: fixed;  
-  
-  font-family: "Audiowide", sans-serif;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
   overflow-x: hidden;
 }
 
 .moi {
   color: aliceblue;
-  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
   text-align: center;
 }
 
@@ -33,6 +31,7 @@ body {
   margin: 0 auto 40px auto;
   max-width: 1920px;
 }
+
 
 .About_me,
 .profil,
@@ -69,52 +68,21 @@ body {
 
 .About_me h4,
 .profil h4 {
-  color: white;
-  text-align: center;
   font-size: 80%;
 }
 
-.test2 input,
-.test2 textarea {
-  color: #ffffff;
-  background: none;
-  border-radius: 10px;
-  border: solid rgba(0, 0, 255, 0.281);
-  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
-  margin: 2%;
-  text-align: center;
-  font-family: "Audiowide", sans-serif;
-}
 
-.test2 button {
-  color: #ffffff;
-  background: none;
-  border: solid rgba(0, 0, 255, 0.281);
-  border-radius: 10px;
-  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
-  width: 120px;
-  height: 35px;
-  margin-top: 10px;
-  font-family: "Audiowide", sans-serif;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.test2 input::placeholder,
-.test2 textarea::placeholder {
-  color: #ffffff;
-  opacity: 1;
-}
-
-.Compétences h2 {
+.Contact a {
   color: white;
-  text-align: center;
+  text-decoration: none;
   font-size: 80%;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
-
-.Projets {
-  width: 440px;
-  height: 430px;
+.Contact a:hover {
+  color: #00c3ff;
+  text-shadow: 0px 0px 6px #00c3ff;
+  transform: translateY(-2px);
 }
 
 .Projets a {
@@ -123,147 +91,43 @@ body {
   font-size: 80%;
   transition: 0.3s ease;
 }
-
 .Projets a:hover {
   color: #00c3ff;
   text-shadow: 0px 0px 6px #00c3ff;
 }
-
 .Projets li {
   list-style-type: none;
   margin-left: 3%;
 }
 
-.python {
+/* Compétences */
+.python, .html, .css, .react {
   width: 50px;
   height: 50px;
-  margin-left: -3%;
+  margin: 5px;
 }
 
-.html {
-  width: 50px;
-  height: 50px;
+/* SVG animé */
+svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* derrière tout le reste */
+  height: 100vh;
+  width: 100%;
+  display: block;
 }
-
-.css {
-  width: 40px;
-  height: 50px;
+:root{
+  --one:#bdd7ff;
+  --two:#4c94ff;
+  --three:#103064;
 }
-
-.react {
-  width: 50px;
-  height: 50px;
-}
-
-.lien h2 {
-  color: white;
-  text-align: center;
-  font-size: 80%;
-}
-
-.git {
-  width: 50px;
-  height: 50px;
-}
-
-.link {
-  width: 50px;
-  height: 50px;
-}
-
-.logo {
-  display: flex;
-  margin-left: 136px;
-}
-
-.Contact a {
-  color: white;
-  text-decoration: none;
-  font-size: 80%;
-  margin: 5px 0;
-  display: inline-block;
-  transition: all 0.3s ease;
-}
-
-.Contact a:hover {
-  color: #00c3ff;
-  text-shadow: 0px 0px 6px #00c3ff;
-  transform: translateY(-2px);
-}
-
-.Contact p {
-  margin: 10px 0;
-}
-
-
-@media (max-width: 1024px) {
-  .corps {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .About_me,
-  .profil,
-  .Contact,
-  .Projets {
-    width: 80%;
-    height: auto;
-  }
-}
-
-@media (max-width: 768px) {
-  .corps {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .About_me,
-  .profil,
-  .Contact,
-  .Projets {
-    width: 90%;
-    margin: 20px 0;
-  }
-
-  .Projets li {
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .test2 input,
-  .test2 textarea {
-    width: 90%;
-  }
-
-  .test2 button {
-    width: 60%;
-  }
-
-  .moi {
-    font-size: 22px;
-  }
-}
-
-@media (max-width: 480px) {
-  .moi {
-    font-size: 18px;
-  }
-
-  .About_me,
-  .profil,
-  .Contact,
-  .Projets {
-    width: 95%;
-    border-radius: 20px;
-  }
-
-  .test2 input,
-  .test2 textarea {
-    font-size: 14px;
-  }
-
-  .test2 button {
-    height: 30px;
-    font-size: 14px;
-  }
-}
+rect[y="0"]{fill:var(--two);}
+rect[y="100"]{fill:var(--one);}
+path{transition: .35s cubic-bezier(.3,.2,.1,1.4); fill:none; stroke:var(--two); stroke-width:10; stroke-linejoin:round; stroke-linecap:round;}
+#floor{stroke:url(#one);}
+#roof{stroke:url(#two);}
+#one :first-child{stop-color:var(--one)}
+#one :last-child{stop-color:var(--two)}
+#two :first-child{stop-color:var(--two)}
+#two :last-child{stop-color:var(--three)}
