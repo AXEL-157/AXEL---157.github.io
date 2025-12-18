@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-  background-image: url(./image/125618-733814655_small.gif);
+  background-image: url(./image//3181600.jpg);
   background-repeat: no-repeat;
   background-size: cover;         
   background-position: center;   
@@ -42,7 +42,7 @@ body {
   margin: 0 10px;
   min-width: 220px;
   color: aliceblue;
-  background-color: rgba(34, 34, 34, 0.37);
+  background-color: rgba(0, 14, 75, 0.37);
   border-radius: 40px;
   transition: transform 0.3s ease;
   width: 440px;
