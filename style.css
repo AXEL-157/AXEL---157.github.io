@@ -9,9 +9,9 @@ html, body {
 }
 
 body {
-  background-image: url(./image/abstract-graphics-with-triangular-glowing-pattern.1920x1080.gif);
+  background-image: url(./image/3181600.jpg);
   background-repeat: no-repeat;
-  background-size: cover;         
+    background-size: cover;         
   background-position: center;   
   background-attachment: fixed;  
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
@@ -42,7 +42,7 @@ body {
   margin: 0 10px;
   min-width: 220px;
   color: aliceblue;
-  background-color: rgba(1, 4, 20, 0.37);
+  background-color: rgba(4, 16, 80, 0.37);
   border-radius: 40px;
   transition: transform 0.3s ease;
   width: 440px;
@@ -102,7 +102,7 @@ body {
 }
 
 
-.python, .html, .css, .react ,.GitHub ,.javascript ,.vit{
+.python, .html, .css, .react ,.javascript ,.vit{
   width: 50px;
   height: 50px;
   margin: 5px;
